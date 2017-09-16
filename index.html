@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NYTSearch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" src="style.css">
+</head>
+<body>
+
+<div class="col-md-12">
+    <div class="'jumbiotron">
+        New York Times Search
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Search Parameters</h3>
+        </div>
+        <div class="panel-body">
+            <form id="movie-form">
+                <label for="search-terms">Search Terms</label>
+                <input type="text" id="search-terms"><br>
+                <label for="records-retrieve">Numebr of Records to Retrieve</label>
+                <input type="text" id="records-retrieve"><br>
+                <label for="start-year">Start Year(Optional)</label>
+                <input type="text" id="start-year"><br>
+                <label for="end-year">End Year(Optional)</label>
+                <input type="text" id="end-year"><br>
+                <input id="do-search" type="submit" value="Search">
+                <div class="btn btn-primary clear">Clear Results</div>
+            </form>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12 test">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Top Articles</h3>
+    </div>
+    <div class="panel-body" id="results-all">
+    </div>
+</div>
+</div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
